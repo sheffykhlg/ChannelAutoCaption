@@ -23,8 +23,8 @@ class autocaption(Client):
             plugins = dict(
                 root="plugins"
             )
-
-   async def start(self):
+  
+    async def start(self):
         await super().start()
         me = await self.get_me()
         print(f"{me.first_name} Iꜱ Sᴛᴀʀᴛᴇᴅ.....✨️ *samra* thanks for using me")
