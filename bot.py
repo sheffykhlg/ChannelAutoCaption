@@ -19,11 +19,16 @@ class autocaption(Client):
             bot_token = Config.BOT_TOKEN,
             api_id = Config.API_ID,
             api_hash = Config.API_HASH,
-            workers = 20,
+            workers = 200,
             plugins = dict(
                 root="plugins"
             )
-        )
 
-if __name__ == "__main__" :
-    autocaption().run()
+   async def start(self):
+        await super().start()
+        me = await self.get_me()
+        print(f"{me.first_name} Iꜱ Sᴛᴀʀᴛᴇᴅ.....✨️ *samra* thanks for using me")
+        await self.send_message(ADMIN, f"**__{me.first_name}  Iꜱ Sᴛᴀʀᴛᴇᴅ.....✨️ *samra* thanks for using me**")
+
+
+Bot().run()
