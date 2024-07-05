@@ -25,4 +25,4 @@ class autocaption(Client):
             )
         )
       
-    autocaption().run()
+    Bot().run()
